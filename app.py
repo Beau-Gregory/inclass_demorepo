@@ -17,7 +17,7 @@ response = requests.get(BASE_URL, params=params)
 data = response.json()
 headlines = []
 
-for i in range(0, 15):
+for i in range(0, 16):
     print(data["response"]["docs"][i]["headline"]["main"])
     headlines.append(data["response"]["docs"][i]["headline"]["main"])
 
